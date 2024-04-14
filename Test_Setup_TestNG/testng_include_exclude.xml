@@ -1,0 +1,11 @@
+<suite name = "Exclude_Method" verbose = "1">
+	<test name = "Exclude_Method">
+		<classes>
+			<class name = "Buoi15.first_package.first_class">
+				<methods>
+					<include name = "first_method"/>
+				</methods>
+			</class> 
+		</classes>
+	</test>
+</suite>

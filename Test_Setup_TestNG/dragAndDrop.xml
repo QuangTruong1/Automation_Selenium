@@ -1,0 +1,12 @@
+<suite name ="dragAndDrop" verbose = "1">
+	<test name ="Tesst dragAndDrop">
+		<classes>
+			<class name ="Buoi18.userInterac_Actions.ActionClass">
+				<methods>
+					<include name = "dragAndDrop"/>
+				</methods>
+			</class>
+			 
+		</classes>
+	</test>
+</suite>

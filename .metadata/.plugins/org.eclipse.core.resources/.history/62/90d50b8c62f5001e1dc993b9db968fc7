@@ -1,0 +1,11 @@
+package Initialization_KhoiTao;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class List_Element extends Init{
+	WebElement buttonSigninElement = driver.findElement(By.xpath("//a[@id='btn-login']"));
+	WebElement buttonUsernameElement = driver.findElement(By.xpath("//body/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/input[1]"));
+	WebElement buttonPassWordElement = driver.findElement(By.xpath("//body/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/input[1]"));
+	WebElement buttonLoginElement = driver.findElement(By.xpath("//button[@id='login']"));
+}

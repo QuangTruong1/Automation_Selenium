@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Exercise]">
+  <test thread-count="5" name="exercise(failed)">
+    <classes>
+      <class name="exercise_package.exercise_class">
+        <methods>
+          <include name="Demo1"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- exercise_package.exercise_class -->
+    </classes>
+  </test> <!-- exercise(failed) -->
+</suite> <!-- Failed suite [Exercise] -->

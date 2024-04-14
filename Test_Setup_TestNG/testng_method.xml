@@ -1,0 +1,17 @@
+
+<suite name="Suite" verbose="1">
+    <test name="ThirdTest">
+        <classes>
+            <class name="first_package.first_class">
+                <methods>
+                    <include name="first_method" />
+                </methods>
+            </class>
+            <class name="second_package.first_class">
+                <methods>
+                    <include name="first_method" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

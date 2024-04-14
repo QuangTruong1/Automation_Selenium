@@ -1,0 +1,11 @@
+<suite name = "Exclude_Method" verbose = "1">
+	<test name = "Exercise_HRM">
+		<classes>
+			<class name = "Buoi22.Excercise_HRM.Exercise_HRM">
+				<methods>
+					<include name = "AddEmployee"/>
+				</methods>
+			</class> 
+		</classes>
+	</test>
+</suite>

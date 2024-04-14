@@ -1,0 +1,7 @@
+<suite name="Exercise" verbose ="1">
+	<test name ="exercise">
+		<packages>
+			<package name = "exercise_package"/>
+		</packages>
+	</test>
+</suite>

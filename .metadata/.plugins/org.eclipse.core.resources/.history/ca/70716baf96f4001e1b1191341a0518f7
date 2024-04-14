@@ -1,0 +1,42 @@
+package Buoi20.JS_Executor;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization_KhoiTao.Init;
+
+public class Handle_Js_Excutor extends Init{
+	@Test (alwaysRun = false)
+	public void JsExcutorDemo() throws Exception {
+//		Tạo đối tượng JavacripExcutor interface object
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		driver.get("https://anhtester.com/");
+		Thread.sleep(1000);
+//		Click vào 1 đường link bất kì
+		WebElement buttonElement = driver.findElement(By.xpath("//h3[contains(text(),'Website Testing')]"));
+		js.executeScript("arguments[0].click();", buttonElement);
+		Thread.sleep(1000);
+//	Lấy tiêu đề trang và Domain trang Bằng JSExcutor
+		String titleText = js.executeScript("return document.title;").toString();
+		System.out.println("title Text is: "+titleText);
+		 
+		String urlText = js.executeScript("return document.URL;").toString();
+		System.out.println("url Text is: "+urlText);
+		
+		String domainText = js.executeScript("return document.domain;").toString();
+		System.out.println("domain Text is: "+domainText);
+	}
+	
+	@Test
+	public void JsExcutorDemo2() throws Exception {
+//		Tạo đối tượng JavacripExcutor interface object
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		driver.get("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
+		js.executeScript("document.getElementById(\"isAgeSelected\").checked =true;\r\n");
+		Thread.sleep(2000);
+		js.executeScript("document.getElementById(\"isAgeSelected\").checked =true;\r\n");
+		Thread.sleep(1000);
+	}
+}

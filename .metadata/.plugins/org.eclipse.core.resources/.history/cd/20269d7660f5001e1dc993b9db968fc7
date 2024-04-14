@@ -1,0 +1,35 @@
+package Buoi21.Wait;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import Initialization_KhoiTao.Init;
+
+public class Handle_Fluent_Wait extends Init{
+	@Test
+	public void FluentWaitDemo() {
+		driver.get("https://anhtester.com/");
+		
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(30))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(NoSuchElementException.class);
+		WaitAndClick("//a[@id='btn-login']",5);
+		
+	}
+	
+	public void WaitAndClick(String id_of_Element, int timeout) {
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(id_of_Element)));
+		driver.findElement(By.xpath(id_of_Element)).click();
+	}
+}

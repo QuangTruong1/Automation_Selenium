@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Initialization_KhoiTao.Element&apos; to &apos;List_Element&apos;&#x0D;&#x0A;- Original project: &apos;Test_Setup_TestNG&apos;&#x0D;&#x0A;- Original element: &apos;Initialization_KhoiTao.Element&apos;&#x0D;&#x0A;- Renamed element: &apos;Initialization_KhoiTao.List_Element&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Element&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Initialization_KhoiTao{Element.java[Element" matchStrategy="1" name="List_Element" qualified="false" references="true" similarDeclarations="false" stamp="1712551340287" textual="false" version="1.0"/>
+</session>

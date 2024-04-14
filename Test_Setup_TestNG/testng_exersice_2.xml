@@ -1,0 +1,7 @@
+<suite name = "test_Exercise_2" verbose = "1">
+	<test name = "Thuchientest">
+		<classes>
+			<class name = "exercise_testng.Login"/>
+		</classes>
+	</test>
+</suite>

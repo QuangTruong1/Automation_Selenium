@@ -1,0 +1,16 @@
+<suite name="CombineSuite" verbose="1">
+    <test name="Combine Test">
+        <packages>
+            <package name="first_package" />
+        </packages>
+        
+        <classes>
+            <class name="second_package.first_class" />
+            <class name="third_package.first_class">
+                <methods>
+                    <include name="first_method" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+​</suite>
